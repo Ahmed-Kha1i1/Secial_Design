@@ -251,8 +251,8 @@ links.forEach((ele) => {
 })
 
 
-bar.addEventListener("click", () => {
-
+bar.addEventListener("click", (e) => {
+e.stopPropagation();
     bar.classList.toggle("opened")
     linksCont.classList.toggle("opened")
     if (currentLink != null) {
@@ -267,5 +267,27 @@ window.onresize = () => {
         if (currentLink != null) {
             currentLink.classList.remove("opened");
         }
+    }
+}
+
+linksCont.onclick = function (e) {
+    e.stopPropagation();
+}
+document.addEventListener("click", (e) => {
+    if (e.target != bar && e.target != linksCont) {
+        RereashLinks();
+    }
+})
+
+function RereashLinks() {
+    if (linksCont.classList.contains("opened")) {
+        linksCont.classList.remove("opened");
+    }
+    if (bar.classList.contains("opened")) {
+        bar.classList.remove("opened"); 
+    }
+    
+    if (currentLink != null) {
+        currentLink.classList.remove("opened");
     }
 }
