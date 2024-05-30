@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/all.min.css" rel="stylesheet" />
+    <link href="css/master.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- header-->
+    <div class="settings">
+        <div class="gear">
+            <i class="fa-solid fa-gear fa-spin"></i>
+        </div>
+        <h2>Settings</h2>
+        <div class="obtion-box">
+            <h3>Color</h3>
+            <ul class="color-options">
+                <li data-color="#2E4CE6" class="active"></li>
+                <li data-color="#4caf50"></li>
+                <li data-color="#ff9800"></li>
+                <li data-color="#f44336"></li>
+            </ul>
+        </div>
+        <div class="obtion-box">
+            <h3>Change background</h3>
+            <div class="change-background">
+                <span data-change="true" class="active">Yes</span>
+                <span data-change="false" class="">No</span>
+            </div>
+        </div>
+        <div class="obtion-box">
+            <h3>Show Bullots</h3>
+            <div class="show-bullots">
+                <span data-change="true" class="active">Yes</span>
+                <span data-change="false" class="">No</span>
+            </div>
+        </div>
+        <button class="reset">Reset Options</button>
+    </div>
+    <div class="bullets-container">
+        <div class="bullet" data-disblay=".landing">
+            <div class="section-name">Landing</div>
+        </div>
+        <div class="bullet" data-disblay=".about">
+            <div class="section-name">About</div>
+        </div>
+        <div class="bullet" data-disblay=".reasons">
+            <div class="section-name">Reasons</div>
+        </div>
+        <div class="bullet" data-disblay=".time-line">
+            <div class="section-name">Timeline</div>
+        </div>
+        <div class="bullet" data-disblay=".testimonials">
+            <div class="section-name">Testimonials</div>
+        </div>
+        <div class="bullet" data-disblay=".contact-us">
+            <div class="section-name">Contact Us</div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="titles">
+                <span class="logo">
+                    <i class="fa-solid fa-handshake-angle"></i>
+                    <span>miro</span>
+                </span>
+            </div>
+            <ul class="links">
+                    <li>
+                        <div class="link-cont">
+                            <span>What is Micro</span>
+                            <i class="fa-solid fa-angle-down"></i>  
+                        </div>
+                        
+                        <div class="drop-down">
+                            <p>Create powerful visuals to improve your ideas, projects, and processes.</p>
+                            <div class="overview">
+                                <h2>Overview</h2>
+                                <a>Lucidchart overview</a>
+                                <a>Integrations</a>
+                            </div>
+                            <div class="paid-plans">
+                                <h2>Paid plans</h2>
+                                <a>Individual</a>
+                                <a>Team</a>
+                                <a>EnterPrice</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="link-cont">
+                            <span>Solutions</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <div class="drop-down">
+                            <p>Work smarter to save time and solve problems.</p>
+                            <div class="box">
+                                <a>Create process maps and flowcharts</a>
+                                <a>Visualize org structures and Agile teams</a>
+                                <a>Create technical diagrams</a>
+                                <a>Document systems and architecture</a>
+                                <a>Make learning interactive</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="link-cont">
+                            <span>Resources</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <div class="drop-down">
+                            <p>Helpful insights to get the most out of Lucidchart.</p>
+                            <div class="boc">
+                                <a>Learning campus</a>
+                                <a>Blogs</a>
+                                <a>Templates</a>
+                                <a>Webinars</a>
+                                <a>Support</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="link-cont">
+                            <span>Enterprice</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <div class="drop-down">
+                            <p>See and build the future with a powerful visual collaboration suite.</p>
+                            <div class="box">
+                                <a>IT</a>
+                                <a>Engneering</a>
+                                <a>Products</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="3" class="">Pricing</a></li>
+                </ul>
+            <div class="miscellaneous">
+                <div class="language">
+                    <i class="fa-solid fa-globe"></i>
+                    <span class="large-only">EN</span>
+                </div>
+                <div class="contact">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="large-only">Contact Sales</span>
+                </div>
+                <div class="login">
+                    <i class="fa-solid fa-lock"></i>
+                    <span class="large-only">Login</span>
+                </div>
+                <button class="sign-up">Sign Up</button>
+                <span class="bars">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+        </div>
+        
+    </header>
+    <!-- landing -->
+    <section class="landing">
+        <div class="overlay"></div>
+        <div class="intro-text">
+            <h1 class="title">
+                Enter with a dream.
+                <br />
+                Exit with the next big thing.
+            </h1>
+            <p class="caption">
+                Build. iterate. and design faster with Miro — the visual workspace for innovation.
+            </p>
+            <input class="email" type="email" placeholder="Enter your word email" />
+            <button class="sign-up">Sign Up Free</button>
+            <p class="login-massage">Keep work and life separate by using your work email</p>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <h2 class="section-header">Built for the whole team</h2>
+            <ul>
+                <li class="active">Diagramming</li>
+                <li>Meetings & Workshops</li>
+                <li>Planning</li>
+                <li>Wireframing</li>
+            </ul>
+            <div class="images-container">
+                <div class="image-box">
+                    <img src="images/8ef4d993-9280-456d-a198-2921017ff37f.png" alt="image" />
+                </div>
+                <div class="image-box">
+                    <img src="images/22e3ceb2-743a-4641-8335-9badca5e5009.png" alt="image" />
+                </div>
+                <div class="image-box">
+                    <img src="images/90da3426-d82d-4535-846c-3523805ecb60.png" alt="image" />
+                </div>
+                <div class="image-box">
+                    <img src="images/543e1ad9-e9ba-4096-a4dc-9603422d9d48.png" alt="image" />
+                </div>
+            </div>
+            <p class="descripption">
+                Easily update your diagrams as your processes change. Use intuitive drag-and-drop features to quickly map out your business processes to identify inefficiencies so you can start driving needed improvement.
+            </p>
+        </div>
+    </section>
+    <section class="reasons">
+        <div class="container">
+            <h2 class="section-header">4 of 60 million reasons to try Miro</h2>
+            <p class="caption">Trusted across the world, by companies large and small.</p>
+            <div class="box-cont">
+                <div class="box">
+                    <div class="image-container">
+                        <img src="images/work-steps-1.png" />
+                    </div>
+
+                    <h4>ISO</h4>
+                    <p>ISO-27001 enterprise-grade</p>
+                    <span>security</span>
+                </div>
+                <div class="box">
+                    <div class="image-container">
+                        <img src="images/work-steps-2.png" />
+                    </div>
+
+                    <h4>#1</h4>
+                    <p>Visual Collaboration Platform</p>
+                    <span>on G2</span>
+                </div>
+                <div class="box">
+                    <div class="image-container">
+                        <img src="images/work-steps-3.png" />
+                    </div>
+
+                    <h4>99%</h4>
+                    <p>of the Fortune 100 are Miro</p>
+                    <span>customers</span>
+                </div>
+                <div class="box">
+                    <div class="image-container">
+                        <img src="images/work-steps-4.png" />
+                    </div>
+
+                    <h4>60M+</h4>
+                    <p>
+                        users around the world use
+                    </p>
+                    <span>Miro</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="time-line">
+        <div class="container">
+        <h2 class="section-header">Events</h2>
+            <div class="time-content">
+                <div class="year">2018</div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Strategize & plan</h3>
+                        <p>
+                            Ensure continuous alignment with customer needs and
+                            company strategy. Define goals and initiatives, visualize
+                            priorities and dependencies. and finally. watch your plans
+                            Off. Everything is easier when you never run out Of space.
+                        </p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Design customer-centric solutions</h3>
+                        <p>
+                            Foster a customer-centric mindset and build a mutual team
+                            space, where everyone can capture insights. structure them
+                            with diagrams and tables. and share it all in a central spot.
+                        </p>
+                    </div>
+                </div>
+                <div class="year">2016</div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Strategize & plan</h3>
+                        <p>
+                            Ensure continuous alignment with customer needs and
+                            company strategy. Define goals and initiatives, visualize
+                            priorities and dependencies. and finally. watch your plans
+                            Off. Everything is easier when you never run out Of space.
+                        </p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Design customer-centric solutions</h3>
+                        <p>
+                            Foster a customer-centric mindset and build a mutual team
+                            space, where everyone can capture insights. structure them
+                            with diagrams and tables. and share it all in a central spot.
+                        </p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Design customer-centric solutions</h3>
+                        <p>
+                            Foster a customer-centric mindset and build a mutual team
+                            space, where everyone can capture insights. structure them
+                            with diagrams and tables. and share it all in a central spot.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h2 class="section-header">Testimonials</h2>
+        <div class="container">
+            <div class="box-comment">
+                <p class="comment">
+                    Schools are a strategic means of providing children with educational
+                    qualifications that will enable them to find employment and status in life. schools
+                    can be dynamic settings for promoting health.
+                </p>
+                <div class="info">
+                    <img src="images/avatar-01.png" alt="" />
+                    <div class="data">
+                        <div class="name">Ahmed Magdy</div>
+                        <div class="jop">CEO At Company</div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-comment">
+                <p class="comment">
+                    Schools are a strategic means of providing children with educational
+                    qualifications that will enable them to find employment and status in life. schools
+                    can be dynamic settings for promoting health.
+                </p>
+                <div class="info">
+                    <img src="images/avatar-02.png" alt="" />
+                    <div class="data">
+                        <div class="name">Ahmed Magdy</div>
+                        <div class="jop">CEO At Company</div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-comment">
+                <p class="comment">
+                    Schools are a strategic means of providing children with educational
+                    qualifications that will enable them to find employment and status in life. schools
+                    can be dynamic settings for promoting health.
+                </p>
+                <div class="info">
+                    <img src="images/avatar-03.png" alt="" />
+                    <div class="data">
+                        <div class="name">Ahmed Magdy</div>
+                        <div class="jop">CEO At Company</div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-comment">
+                <p class="comment">
+                    Schools are a strategic means of providing children with educational
+                    qualifications that will enable them to find employment and status in life. schools
+                    can be dynamic settings for promoting health.
+                </p>
+                <div class="info">
+                    <img src="images/avatar-04.png" alt="" />
+                    <div class="data">
+                        <div class="name">Ahmed Magdy</div>
+                        <div class="jop">CEO At Company</div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-comment">
+                <p class="comment">
+                    Schools are a strategic means of providing children with educational
+                    qualifications that will enable them to find employment and status in life. schools
+                    can be dynamic settings for promoting health.
+                </p>
+                <div class="info">
+                    <img src="images/avatar-05.png" alt="" />
+                    <div class="data">
+                        <div class="name">Ahmed Magdy</div>
+                        <div class="jop">CEO At Company</div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-comment">
+                <p class="comment">
+                    Schools are a strategic means of providing children with educational
+                    qualifications that will enable them to find employment and status in life. schools
+                    can be dynamic settings for promoting health.
+                </p>
+                <div class="info">
+                    <img src="images/avatar-06.png" alt="" />
+                    <div class="data">
+                        <div class="name">Ahmed Magdy</div>
+                        <div class="jop">CEO At Company</div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-comment">
+                <p class="comment">
+                    Schools are a strategic means of providing children with educational
+                    qualifications that will enable them to find employment and status in life. schools
+                    can be dynamic settings for promoting health.
+                </p>
+                <div class="info">
+                    <img src="images/avatar-06.png" alt="" />
+                    <div class="data">
+                        <div class="name">Ahmed Magdy</div>
+                        <div class="jop">CEO At Company</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-us">
+        <div class="container">
+            <h1 class="section-header">Contact Us</h1>
+            <form>
+                <div class="left">
+                    <input type="text" placeholder="Your Name" name="name"/>
+                    <input type="text" placeholder="Your Phone" name="phone"/>
+                    <input type="text" placeholder="Your Email" name="email"/>
+                    <input type="text" placeholder="Subject" name="subject"/>
+                </div>
+                <div class="right">
+                    <textarea class="message" placeholder="Your Message" name="message"></textarea>
+                    <input type="submit" value="Send"/>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        Created with love by Ahmed Magdy
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
